@@ -27,3 +27,40 @@
 - Use the directive ` use client `at the top of component file
 
 # Routing
+
+- File based Routing 
+- All routes must be inside the `src/app` directory
+- Every route must have `page.js` or `page.tsx` file
+- `page.js` or `page.tsx` must have default export
+
+1. Simple routes
+- Create a folder inside /src/app and add a page.js file
+- /src/app/about/page.js
+- /src/app/contact/page.js
+
+2. Nested routes
+- Create a folder inside folder for nested routes
+- /src/app/courses/frontend/react/page.js
+- /src/app/courses/frontend/nextjs/page.js
+- /src/app/courses/backend/django/page.js
+- /src/app/courses/backend/express/page.js
+
+3. Dynamic routes
+- Create a folder enclosed by []
+-  /src/app/products/[id]/page.js
+- use the `{params}` for the getting the id 
+
+4. Nested dynamic routes
+- /src/app/products/[id]/reviews/[reviewId]/page.js
+
+5. Catch all segments
+- /src/app/blogs/[...slug]/page.js
+
+6. Private folders
+- /src/app/_folder
+
+7. Route groups
+- /src/app/(auth)/
+
+## Layout
+## Params
