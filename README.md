@@ -76,8 +76,9 @@
 - error.js // always client component
 
 ## Link
+- <Link> for navigation, similar to <a>
 
--useRouter of next-navigation
+- For programmatic navigation, use the `useRouter` hook
 
 ## Params & searchParmas
 
