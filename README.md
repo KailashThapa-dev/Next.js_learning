@@ -16,17 +16,17 @@
 
 ## React server Component
 
-## 1. Server Component {default}
+# 1. Server Component {default}
  - All react components in next.js are server component by default
  - Server side task like data fetching, files read, database data fetching, async tasks.
  - Cannot use useState,hook,events, user-interaction 
 
-## 2. Client Component
+# 2. Client Component
 - Can use useState,hook,events, user-interaction 
 - Tradational react components
 - Use the directive ` use client `at the top of component file
 
-# Routing
+## Routing
 
 - File based Routing 
 - All routes must be inside the `src/app` directory
@@ -62,5 +62,36 @@
 7. Route groups
 - /src/app/(auth)/
 
-## Layout
-## Params
+## Layouts
+-  UI component that is shared among different pages
+- `layout.js` ot `layout.tsx`
+
+
+## Special files of Next.js
+
+- page.js
+- layout.js
+- not-found.js
+- loading.js
+- error.js // always client component
+
+## Link
+
+-useRouter of next-navigation
+
+## Params & searchParmas
+
+1. For Server Component
+- params: dynamic routes params, available on page.js & layout.js
+- searchParams: query, available on page.js
+
+2. For Client Component
+- useParams()
+- useSearchParams()
+
+## Metadata
+- Metadata api is used to define metadata of the page
+- page.js / layout.js
+- useful for the search engine optimization (SEO)
+- static: metadata
+- dynamic: generateMetadata function
