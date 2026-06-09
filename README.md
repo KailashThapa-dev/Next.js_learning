@@ -96,3 +96,36 @@
 - useful for the search engine optimization (SEO)
 - static: metadata
 - dynamic: generateMetadata function
+
+
+## Rendering: SSR, CSR, SSG
+
+- Process of converting component/transforming component code into UI.
+- Client side rendering(CSR) and Server side rendering(SSR)
+- Static site generation (SSG) generated during app built.
+- Note: Components are server side rendered in Next.js and client side rendered in React.js
+
+## CSR
+
+- If rendering is done in browser -> CSR
+
+## SSR
+
+- If rendering is done in server -> SSR
+
+
+
+## Client Component
+- To make client component `use client` directive
+- Interactivity
+- Event, user interaction
+- State management
+- Client component can be both CSR or SSR
+
+## Sever Component
+- By default, all the components in Next.js are Server component
+- Fetch data from API
+- Send API request
+- Metadata
+
+ 
