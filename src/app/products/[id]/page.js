@@ -1,10 +1,14 @@
-import React from 'react'
+import { getProductById } from "@/api/products";
+import ProductDetails from "../_components/ProductDetails";
 
-const ProductDetailsPage = async ({params}) => {
-  const { id } = await params;
-  return (
-    <div>Product details of id: {id}</div>
-  )
-}
+export const metadata = {
+  title: "Product Details",
+};
 
-export default ProductDetailsPage
+const ProductDetailsPage = async ({ params }) => {
+  const product = await getProductById(params.id);
+
+  return <ProductDetails product={product} />;
+};
+
+export default ProductDetailsPage;
